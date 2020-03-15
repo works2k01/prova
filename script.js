@@ -32,7 +32,7 @@ function ExibirPagamento(){
     var Divpagamento = document.getElementsByTagName("div")
 
     //escondendo divs
-    for(var i=0; i < Divpagamento ; i++){
+    for(var i=0; i < Divpagamento.length ; i++){
         var d = Divpagamento[i]
         d.className = "esconder"
     }
