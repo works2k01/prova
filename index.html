@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="return Validar()">
+        <label for="Nome">Nome</label>
+        <input type="text" name="Nome" id="Nome"> <br>
+        <label for="Endereço">Endereço</label>
+        <input type="text" name="Endereço" id="Endereço"> <br>
+        <label for="Pagamento">Forma de Pagamento</label>
+        <input type="radio" name="pagamento" id="botaopagamento" value="Boleto" onchange="ExibirPagamento()">Boleto
+        <input type="radio" name="pagamento" id="botaopagamento" value="Cartão" onchange="ExibirPagamento()">Cartão
+        <input type="radio" name="pagamento" id="botaopagamento" value="PayPal" onchange="ExibirPagamento()">PayPal
+        <br>
+        <div id="pagamentoBoleto" class="esconder" name="Boleto">
+            <input type="button" value="Baixar Boleto">
+        </div>
+
+        <div id="pagamentocartao" class="esconder" name="Cartão">
+            <label for="numero">Número:</label>
+            <input type="number" name="numerocartao" id="numerocartao"> <br>
+            <label for="vencimento"> Vencimento (mm/aa)</label>
+            <input type="number" name="vencimento" id="vencimento"> <br>
+            <label for="codsegurança">Cod.Segurança:</label>
+            <input type="number" name="codsegurança" id="codsegurança">
+        </div>
+
+        <div id="pagamentopaypal" class="esconder" name="PayPal">
+            <img src="paypal-logo.png" alt="paypal-logo" width="150px">
+        </div>
+
+        <input type="button" id="enviar" value="Enviar">
+    </form>
+    <p>jabfhs</p>
+</body>
+</html>
